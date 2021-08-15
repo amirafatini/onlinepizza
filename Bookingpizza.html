@@ -1,0 +1,102 @@
+<style>
+
+input[type=text], select {
+  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:25;
+  background-color: #FFE4B5;
+  
+
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ff80ab;
+  color: white;
+  padding: 10px 10px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size:20;
+  font-family: "Cambria"
+}
+
+input[type=submit]:hover {
+  background-color: #f8bbd0;
+  font-size:20;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #F08080;
+  padding: 20px;
+  }
+h4 {
+  text-align: center;
+  font-size:40;
+  font-family: "Cambria"
+}
+label{
+  font-size:30;
+  font-family: "Cambria"
+}
+  }
+input.larger{
+width:50px;
+height:50px;
+}
+
+</style>
+<body>
+
+<h4  id="booking" class=" p1">BOOKING</h4>
+
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="cnum">Contact number</label>
+    <input type="text" id="cnum" name="contactnumber" placeholder="Contact number..">
+  
+   <label for="menu">Menu</label>
+    <select id="menu" name="menu">
+	<option value="Select..">Select your menu</option>
+	<option value="Mamacita">Mamacita Classic</option>
+    <option value="Hawaiian">Hawaiian Classic</option>
+    <option value="Hawaiian">Hawaiian Lover</option>
+	<option value="Chicken">Chicken Fajitas</option>
+	<option value="Mushroomt">Mushroom Garden</option>
+	<option value="Meat">Meat Lover</option>
+	<option value="Mexican">Mexican Fiesta A Beef</option>
+	</select>
+	
+	<label for="Type">Type Meal</label>
+	<select id="Type" name="Type">
+	<option value="Select">Select your type</option>
+    <option value="Regular">REGULAR PIZZA - 6 SLICES</option>
+    <option value="Medium">MEDIUM PIZZA - 8 SLICES</option>
+	<option value="LARGE">LARGE PIZZA - 10 SLICES- 8 SLICES</option>
+	</select>
+	
+    <form action="/action_page.php">
+    <label for="DayTime">(Date & Time):</label>
+    <input type="datetime-local" id="time" name="datetime">
+    </select>
+	
+
+    <input type="submit" value="Submit">
+  </form>
+ 
+</div>
